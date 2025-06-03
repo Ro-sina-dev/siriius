@@ -1,35 +1,199 @@
 <!doctype html><html class="no-js" lang="zxx">
 <!-- Mirrored from html.themeholy.com/webteck/demo/home-cyber-security-op.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Feb 2025 10:51:21 GMT -->
-<head><meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">    <title>SIRIIUS - Technology & IT Solutions </title><meta name="author" content="Themeholy">
-    <meta name="author" content="Themeholy"><meta name="description" content="Siruis -Installations  Caméras  & Cybersécurité"><meta name="keywords"
-     content="Siruis Installation camera"><meta name="robots" content="INDEX,FOLLOW"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-     <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
+    <meta name="author" content="Themeholy">
+    <meta name="description" content="Siriius -Installations  Caméras  & Cybersécurité"><meta name="keywords"
+     content="Siriius Installation camera">
+     <meta name="robots" content="INDEX,FOLLOW">
+     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+     <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
+     <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
      <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
      <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
      <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
      <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
      <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
      <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
-     <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/android-icon-192x192.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
-     <link rel="manifest" href="assets/img/favicons/manifest.json"><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
+    <!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+
      <meta name="theme-color" content="#ffffff"><link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&amp;family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
      <link rel="stylesheet" href="assets/css/bootstrap.min.css"><link rel="stylesheet" href="assets/css/fontawesome.min.css"><link rel="stylesheet" href="assets/css/magnific-popup.min.css">
-     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"><link rel="stylesheet" href="assets/css/style.css"></head>
+     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"><link rel="stylesheet" href="assets/css/style.css">
+     <link rel="icon" type="image/png" href="/assets/images/favicon/imagesS.png">
+
+       
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/logoo.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/logoo.png.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logoo.png.png">
+    
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/logoo.png">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+
+    <style>
+ .video-container {
+    position: relative;
+    max-height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 20px;
+    pointer-events: none;
+    transition: transform 0.3s ease;
+  }
+
+  .video-container:hover .play-icon {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+        /*  */
+     .typewriter-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #000;
+  width: 0;
+  opacity: 0;
+}
+
+/* Animation à jouer */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink {
+  50% { border-color: transparent }
+}
+        /*  */
+        
+        .animated-image {
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .animated-image:hover {
+    transform: scale(1.05) rotate(1deg);
+  }
+
+  @keyframes float {
+    0%   { transform: translatey(0px); }
+    50%  { transform: translatey(-10px); }
+    100% { transform: translatey(0px); }
+  }
+
+  .floating {
+    animation: float 2s ease-in-out infinite;
+}
+
+        /*  */
+        .btn-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .btn-group a {
+    opacity: 0;
+    transform: translateY(40px);
+    display: inline-block;
+    animation: fadeInUpBtn 0.8s ease forwards;
+  }
+
+  .btn-group a:nth-child(1) {
+    animation-delay: 0.7s;
+  }
+
+  .btn-group a:nth-child(2) {
+    animation-delay: 1.2s;
+  }
+
+  @keyframes fadeInUpBtn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+        /*  */
+        .hero-title, .hero-text {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease forwards;
+  }
+
+  .hero-text {
+    animation-delay: 0.5s;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /*  */
+        .swiper-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.brand-logo {
+  height: 50px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+    </style>
+    </head>
 
 <body class="theme-blue2"><div class="cursor"></div><div class="cursor2"></div>
-    <div class="color-scheme-wrap active"><button class="switchIcon"><i class="fa-solid fa-palette"></i></button>
+    <div class="color-scheme-wrap active">
         <h4 class="color-scheme-wrap-title"><i class="far fa-palette me-2"></i>Style Swicher</h4>
     <div class="color-switch-btns"><button data-color="#3E66F3"><i class="fa-solid fa-droplet"></i></button> <button data-color="#684DF4"><i class="fa-solid fa-droplet"></i></button> <button data-color="#008080"><i class="fa-solid fa-droplet"></i></button> <button data-color="#323F7C"><i class="fa-solid fa-droplet"></i></button> <button data-color="#FC3737"><i class="fa-solid fa-droplet"></i></button> <button data-color="#8a2be2"><i class="fa-solid fa-droplet"></i></button></div><a href="https://themeforest.net/user/themeholy" class="th-btn text-center w-100"><i class="fa fa-shopping-cart me-2">
 
     </i> Purchase</a></div><div id="preloader" class="preloader"><button class="th-btn th-radius preloaderCls">Annuler le préchargeur</button><div id="loader" class="th-preloader"><div class="animation-preloader"><div class="txt-loading"><span preloader-text="S" class="characters">S</span> <span preloader-text="I" class="characters">I</span>
-         <span preloader-text="R" class="characters">R</span> <span preloader-text="I" class="characters">I</span> <span preloader-text="I" class="characters">I</span> <span preloader-text="U" class="characters">U</span> <span preloader-text="S" class="characters">S</span></div></div></div></div><div class="th-menu-wrapper"><div class="th-menu-area text-center"><button class="th-menu-toggle"><i class="fal fa-times"></i></button><div class="mobile-logo"><a class="icon-masking" href="index.html"><span data-mask-src="assets/img/logo.svg" class="mask-icon"></span><img src="assets/img/logo.svg" alt="Webteck"></a></div><div class="th-mobile-menu"><ul><li class="menu-item-has-children mega-menu-wrap"><a href="#">Home</a><ul class="mega-menu"><li><a href="#">Multipage</a><ul><li><a href="index.html">Digital Agency</a></li><li><a href="home-web-development.html">Web Development</a></li><li><a href="home-software-company.html">Software Company</a></li><li><a href="home-software-company-2.html">Software Company Style 2</a></li><li><a href="home-startup-company.html">Startup Company</a></li><li><a href="home-it-solution.html">IT Solution</a></li><li><a href="home-web-agency.html">Web Agency</a></li><li><a href="home-startup.html">Home Startup</a></li><li><a href="home-game-solution.html">Game Solution</a></li><li><a href="home-sass-marketing.html">Sass Marketing</a></li><li><a href="home-sass-landing.html">Sass Landing</a></li></ul></li><li><a href="#">Multipage</a><ul><li><a href="home-sass-landing-2.html">Sass Landing Style 2</a></li><li><a href="home-app-landing.html">App Landing</a></li><li><a href="home-ai-technology.html">AI Technology</a></li><li><a href="home-cyber-security.html">Cyber Security</a></li><li><a href="home-cyber-security-2.html">Cyber Security Style 2</a></li><li><a href="home-it-company.html">IT Company</a></li><li><a href="home-digital-marking.html">Digital Marking</a></li><li><a href="home-it-agency.html">IT Agency</a></li><li><a href="home-crm.html">Home CRM</a></li><li><a href="home-it-consulting.html">IT Consulting</a></li><li><a href="home-help-desk.html">Home Help Desk</a></li></ul></li><li><a href="#">Onepage</a><ul><li><a href="home-digital-agency-op.html">Digital Agency Onepage</a></li><li><a href="home-web-development-op.html">Web Development Onepage</a></li><li><a href="home-software-company-op.html">Software Company Onepage</a></li><li><a href="home-software-company-2-op.html">Software Company Style 2 Onepage</a></li><li><a href="home-startup-company-op.html">Startup Company Onepage</a></li><li><a href="home-it-solution-op.html">IT Solution Onepage</a></li><li><a href="home-web-agency-op.html">Web Agency Onepage</a></li><li><a href="home-startup-op.html">Home Startup Onepage</a></li><li><a href="home-game-solution-op.html">Game Solution Onepage</a></li><li><a href="home-sass-marketing-op.html">Sass Marketing Onepage</a></li><li><a href="home-sass-landing-op.html">Sass Landing Onepage</a></li></ul></li><li><a href="#">Onepage</a><ul><li><a href="home-sass-landing-2-op.html">Sass Landing Style 2 Onepage</a></li><li><a href="home-app-landing-op.html">App Landing Onepage</a></li><li><a href="home-ai-technology-op.html">AI Technology Onepage</a></li><li><a href="home-cyber-security-op.html">Cyber Security Onepage</a></li><li><a href="home-cyber-security-2-op.html">Cyber Security Style 2 Onepage</a></li><li><a href="home-it-company-op.html">IT Company Onepage</a></li><li><a href="home-digital-marking-op.html">Digital Marking Onepage</a></li><li><a href="home-it-agency-op.html">IT Agency Onepage</a></li><li><a href="home-crm-op.html">Home CRM Onepage</a></li><li><a href="home-it-consulting-op.html">IT Consulting Onepage</a></li><li><a href="home-help-desk-op.html">Home Help Desk</a></li></ul></li></ul></li><li><a href="about.html">About Us</a></li>
-    <li class="menu-item-has-children"><a href="#">Services</a><ul class="sub-menu"><li><a href="service.html">Services</a></li><li><a href="service-details.html">Services Details</a></li></ul></li><li class="menu-item-has-children"><a href="#">Pages</a><ul class="sub-menu"><li class="menu-item-has-children"><a href="#">Shop</a><ul class="sub-menu"><li><a href="shop.html">Shop</a></li><li><a href="shop-details.html">Shop Details</a></li><li><a href="cart.html">Cart Page</a></li><li><a href="checkout.html">Checkout</a></li><li><a href="wishlist.html">Wishlist</a></li></ul></li><li><a href="team.html">Team</a></li><li><a href="team-details.html">Team Details</a></li><li><a href="project.html">Project</a></li><li><a href="project-details.html">Project Details</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="faq.html">Faq Page</a></li><li><a href="error.html">Error Page</a></li></ul></li><li class="menu-item-has-children"><a href="#">Blog</a><ul class="sub-menu"><li><a href="blog.html">Blog</a></li><li><a href="blog-details.html">Blog Details</a></li></ul></li><li><a href="contact.html">Contact</a></li></ul></div></div></div><header class="th-header header-layout8 onepage-nav"><div class="sticky-wrapper"><div class="menu-area"><div class="container th-container">
-    <div class="row align-items-center justify-content-between"><div class="col-auto"><div class="header-logo"><a class="icon-masking" href="index.html"><span data-mask-src="" class="mask-icon"></span><img src="assets/img/logoo.png" width="150px" height="150px" alt="siruis"></a></div>
+         <span preloader-text="R" class="characters">R</span> <span preloader-text="I" class="characters">I</span> <span preloader-text="I" class="characters">I</span> <span preloader-text="U" class="characters">U</span> <span preloader-text="S" class="characters">S</span></div></div></div></div><div class="th-menu-wrapper"><div class="th-menu-area text-center"><button class="th-menu-toggle"><i class="fal fa-times"></i></button><div class="mobile-logo"><a class="icon-masking" href="index.html"><span data-mask-src="assets/img/logoo.png" width="150px" height="150px" class="mask-icon"></span><img src="assets/img/logoo.png" width="150px" height="150px" alt="Webteck"></a></div><div class="th-mobile-menu"><ul><li class="">
+
+          
+                        <li><a href="about.html">A propos</a></li>
+    <li class=""><a href="service.html">Services</a><ul class="sub-menu"><li></li></ul></li><li class=""><ul class="sub-menu"><li class="m"></li></ul></li><li class=""><ul class="sub-menu"></ul></li><li><a href="contact.html">Contact</a></li></ul></div></div></div><header class="th-header header-layout8 onepage-nav"><div class="sticky-wrapper"><div class="menu-area"><div class="container th-container">
+    <div class="row align-items-center justify-content-between"><div class="col-auto"><div class="header-logo"><a class="icon-masking" href="index.html"><span data-mask-src="" class="mask-icon"></span><img src="assets/img/logoo.png" width="150px" height="150px" alt="siriius"></a></div>
 </div><div class="col-auto">
 
     <nav class="main-menu style2 d-none d-lg-inline-block"><ul><li class="menu-item-has-children mega-menu-wrap">
@@ -42,78 +206,207 @@
 
             <li class="">
                 
-                <a href="#">Services</a>
+                <a href="service.html">Services</a>
                 
             </li>
                 
                     
-                    <li class=""><a href="#">Blog</a>
-                    </li>
+                    <!-- <li class="">
+                      <a href="#">Blog</a>
+                    </li> -->
                         <li>
                             <a href="contact.html">Contact</a></li></ul>
                         
             </nav>
     
-    <button type="button" class="th-menu-toggle d-block d-lg-none"><i class="far fa-bars"></i></button></div><div class="col-auto d-none d-lg-inline-block"><div class="header-button"><a href="contact.html" class="th-btn style8 style-radius">Contacter Siruis</a></div></div></div></div></div></div></header>
+    <button type="button" class="th-menu-toggle d-block d-lg-none"><i class="far fa-bars"></i></button></div><div class="col-auto d-none d-lg-inline-block"><div class="header-button"><a href="contact.html" class="th-btn style8 style-radius">Contactez-nous</a></div></div></div></div></div></div></header>
     
-    <div class="th-hero-wrapper hero-10" id="hero"><div class="container th-container4"><div class="row align-items-end"><div class="col-xl-7"><div class="hero-style10"><h1 class="hero-title"> Sécurisez vos <span>Locaux </span><span class="text-theme fw-normal">et équipements</span></h1>
-        <p class="hero-text">                                                                                                                                                                       
-            Protégez vos locaux avec des solutions de sécurité électronique avancées. Nous installons des caméras de surveillance haute définition, 
-             des systèmes d'alarme connectés et des contrôles d'accès intelligents pour une protection optimale. Grâce à notre expertise, bénéficiez d'une surveillance en temps réel 
-            et d'une sécurité renforcée contre toute intrusion.
+    <div class="th-hero-wrapper hero-10" id="hero"><div class="container th-container4"><div class="row align-items-end"><div class="col-xl-7"><div class="hero-style10">
+        <h1 class="hero-title">Soyez en sécurité <span>avec SIRIIUS</span><span class="text-theme fw-normal"></span></h1>
+
+        <p class="hero-text">
+          Protégez vos infrastructures avec des solutions de sécurité électronique avancées. Nous installons tous les équipements de sécurité électronique (installation de caméra de surveillance, système d'alarme anti-intrusion, 
+          contrôle d'accès). Grâce à notre expertise, bénéficiez d'une surveillance en temps réel 
+          et d'une sécurité renforcée.
         </p>
         
         
-        <div class="btn-group"><a href="about.html" class="th-btn style8">Savoir plus</a> <a href="contact.html" class="th-btn style5 style8">Contact Nous</a></div></div></div><div class="col-xl-5"><div class="th-hero-img"><img src="assets/img/hero/hero_bg_11_1.png" alt=""><div class="hero-line1"></div><div class="hero-line2"></div><div class="hero10-shape"><img src="assets/img/hero/hero10_shape.png" alt=""></div></div></div></div></div></div>
+        <div class="btn-group"><a href="about.html" class="th-btn style8" style="text-transform: none;"> En savoir plus</a> <a href="contact.html" class="th-btn style5 style8" style="text-transform: none; ">Nous contacter</a></div></div></div><div class="col-xl-5"><div class="th-hero-img">
+            <img src="assets/img/hero/er.png" alt="" class="animated-image floating">
+
+            <div class="hero-line1"></div><div class="hero-line2"></div><div class="hero10-shape"><img src="assets/img/hero/hero10_shape.png" alt=""></div></div></div></div></div></div>
 
     <div class="brand-sec6 overflow-hidden"><div class="container th-container4"><div class="title-area mb-60 text-center">
-        <h2 class="brand-title2 mt-n3">De confiance par des millions de clients..</h2></div>
+        <h2 class="brand-title2 mt-n3 animate-on-scroll" style="opacity: 0; transform: translateY(30px); transition: all 1s ease;">
+            Ils nous font confiance ..
+          </h2>
+    </div>
         <div class="slider-area text-center"><div class="swiper th-slider brand-slider6" id="brandSlider4" data-slider-options='{"breakpoints":{"0":{"slidesPerView":2},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"4"},"1200":{"slidesPerView":"5"},"1400":{"slidesPerView":"6"}}}'>
-            <div class="swiper-wrapper"><div class="swiper-slide"><a href="about.html" class="brand-box"><img src="assets/img/brand/brand_3_1.svg" alt="Brand Logo"></a></div>
-            <div class="swiper-slide"><a href="about.html" class="brand-box"><img src="assets/img/brand/brand_3_2.svg" alt="Brand Logo"></a></div><div class="swiper-slide"><a href="about.html" class="brand-box"><img src="assets/img/brand/brand_3_3.svg" alt="Brand Logo"></a></div><div class="swiper-slide"><a href="about.html" class="brand-box"><img src="assets/img/brand/brand_3_4.svg" alt="Brand Logo"></a></div><div class="swiper-slide"><a href="about.html" class="brand-box">
-                <img src="assets/img/brand/brand_3_5.svg" alt="Brand Logo"></a></div><div class="swiper-slide"><a href="about.html" class="brand-box"><img src="assets/img/brand/brand_3_6.svg" alt="Brand Logo"></a></div><div class="swiper-slide"><a href="about.html" class="brand-box"><img src="assets/img/brand/brand_3_1.svg" alt="Brand Logo"></a></div><div class="swiper-slide"><a href="about.html" class="brand-box"><img src="assets/img/brand/brand_3_2.svg" alt="Brand Logo"></a></div>
-                <div class="swiper-slide"><a href="about.html" class="brand-box"><img src="assets/img/brand/brand_3_3.svg" alt="Brand Logo"></a></div><div class="swiper-slide"><a href="about.html" class="brand-box"><img src="assets/img/brand/brand_3_4.svg" alt="Brand Logo"></a></div><div class="swiper-slide"><a href="about.html" class="brand-box"><img src="assets/img/brand/brand_3_5.svg" alt="Brand Logo"></a></div><div class="swiper-slide"><a href="about.html" class="brand-box"><img src="assets/img/brand/brand_3_6.svg" alt="Brand Logo"></a></div></div></div></div></div></div>
-                <div class="feature-area3 overflow-hidden"><div class="container th-container4"><div class="choose-feature2-wrap"><div class="choose-feature2"><div class="box-icon"><img src="assets/img/icon/feature_box_1_1.svg" alt="Icon"></div><div class="choose-feature2_content"><h3 class="box-title">Protégez vos installations</h3>
-        <p class="choose-feature2_text"> Sécurisation de vos locaux et de vos données contre toute intrusion</p>
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <a href="about.html" class="brand-box">
+                    <img src="assets/img/normal/1A.png" alt="Kays logo" style="height: 100px; vertical-align: middle; margin-right: 8px;">
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="about.html" class="brand-box">
+                    <img src="assets/img/normal/lii.png" alt="Kays logo" style="height: 70px; vertical-align: middle; margin-right: 8px;">
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="about.html" class="brand-box">
+                    <img src="assets/img/normal/ru.png" alt="Kays logo" style="height: 70px; vertical-align: middle; margin-right: 8px;">
+                  </a>
+                </div>
+              
+                <div class="swiper-slide">
+                  <a href="about.html" class="brand-box">
+                    <img src="assets/img/normal/2B.png" alt="Kays logo" style="height: 100px; vertical-align: middle; margin-right: 8px;">
+                  </a>
+                </div>
+              
+                <div class="swiper-slide">
+                  <a href="about.html" class="brand-box">
+                    <img src="assets/img/normal/3C.png" alt="Kays logo" style="height: 50px; vertical-align: middle; margin-right: 8px;">
+                  </a>
+                </div>
+              
+                <div class="swiper-slide">
+                  <a href="about.html" class="brand-box">
+                    <img src="assets/img/normal/4C.png" alt="Kays logo" style="height: 50px; vertical-align: middle; margin-right: 8px;">
+                  </a>
+                </div>
+              
+                <div class="swiper-slide">
+                  <a href="about.html" class="brand-box">
+                    <img src="assets/img/normal/5B.png" alt="Kays logo" style="height: 100px; vertical-align: middle; margin-right: 8px;">
+                  </a>
+                </div>
+              
+                <div class="swiper-slide">
+                  <a href="about.html" class="brand-box">
+                    <img src="assets/img/normal/1A.png" alt="Kays logo" style="height: 100px; vertical-align: middle; margin-right: 8px;">
+                  </a>
+                </div>
+              
+                <div class="swiper-slide">
+                  <a href="about.html" class="brand-box">
+                    <img src="assets/img/normal/2B.png" alt="Kays logo" style="height: 100px; vertical-align: middle; margin-right: 8px;">
+                  </a>
+                </div>
+              
+                <div class="swiper-slide">
+                  <a href="about.html" class="brand-box">
+                    <img src="assets/img/normal/3C.png" alt="Kays logo" style="height: 50px; vertical-align: middle; margin-right: 8px;">
+                  </a>
+                </div>
+              
+                <div class="swiper-slide">
+                  <a href="about.html" class="brand-box">
+                    <img src="assets/img/normal/4C.png" alt="Kays logo" style="height: 50px; vertical-align: middle; margin-right: 8px;">
+                  </a>
+                </div>
+              
+                <div class="swiper-slide">
+                  <a href="about.html" class="brand-box">
+                    <img src="assets/img/normal/5B.png" alt="Kays logo" style="height: 100px; vertical-align: middle; margin-right: 8px;">
+                  </a>
+                </div>
+              
+                <div class="swiper-slide">
+                  <a href="about.html" class="brand-box">
+                    <img src="assets/img/normal/1A.png" alt="Kays logo" style="height: 50px; vertical-align: middle; margin-right: 8px;">
+                  </a>
+                </div>
+            
+                <div class="swiper-slide">
+                  <a href="about.html" class="brand-box">
+                    <img src="assets/img/normal/2B.png" alt="Kays logo" style="height: 50px; vertical-align: middle; margin-right: 8px;">
+                  </a>
+                </div>
+              
+              </div>
+              </div></div></div></div></div>
+                <div class="feature-area3 overflow-hidden"><div class="container th-container4"><div class="choose-feature2-wrap"><div class="choose-feature2"><div class="box-icon"><img src="assets/img/icon/feature_box_1_1.svg" alt="Icon"></div>
+                
+                <div class="choose-feature2_content"><h3 class="box-title">Protégez vos infrastructures</h3>
+        <p class="choose-feature2_text"> Installation de caméra de surveillance et de clôture électrique</p>
     </div></div>
     <div class="divider"></div><div class="choose-feature2"><div class="box-icon"><img src="assets/img/icon/feature_box_1_2.svg" alt="Icon"></div>
     <div class="choose-feature2_content">
         <h3 class="box-title">Empêchez les intrusions</h3><p class="choose-feature2_text">
-            Installation de caméras de surveillance haute définition </p>
+           Installation d'alarme anti intrusion, de controle d'accès, de barrière automatique et détecteur de métaux</p>
     </div></div>
     <div class="divider"></div><div class="choose-feature2"><div class="box-icon"><img src="assets/img/icon/feature_box_1_3.svg" alt="Icon"></div><div class="choose-feature2_content">
-<        <h3 class="box-title">Surveillance sécurisée</h3><p class="choose-feature2_text">Installation et maintenance de systèmes de vidéosurveillance.</p>
->
-    </div></div><div class="divider"></div></div></div></div><div class="about-sec-9 overflow-hidden th-radius4 space" id="about-sec"><div class="container th-container4"><div class="row justify-content-between flex-row-reverse"><div class="col-xl-6"><div class="ps-xl-5 ms-xl-4"><div class="title-area mb-25">
-       
-        <span class="sub-title sub-title3 style1">À propos de nous</span>
-<h2 class="sec-title">La Solution Parfaite pour l'Installation de Caméras et la Sécurité Électronique</h2>
-</div>
-<p class="">Avec l'évolution constante de la technologie, l'avenir de la sécurité repose sur des solutions innovantes telles que l'installation de systèmes de vidéosurveillance, la sécurisation des accès et la protection des infrastructures.
-    Optimisez la sûreté de vos locaux grâce à des solutions avancées en installation de caméras et en sécurité électronique. Protégez vos biens et vos données avec des technologies modernes et performantes.</p>
+       <h3 class="box-title">Surveillance sécurisée</h3><p class="choose-feature2_text">Installation et maintenance de systèmes de vidéosurveillance.</p>
 
-        <div class="checklist style4 mb-40 list-two-column">
+    </div></div><div class="divider"></div></div></div></div><div class="about-sec-9 overflow-hidden th-radius4 space" id="about-sec"><div class="container th-container4">
+        <div class="row justify-content-between flex-row-reverse"><div class="col-xl-6"><div class="ps-xl-5 ms-xl-4"><div class="title-area mb-25">
+       
+        <span class="sub-title sub-title3" style="font-size: 2rem;">Qui sommes nous ?</span>
+<h3 class="sec-title" style="font-size: 1.5rem; text-transform: none;">Chez SIRIIUS, nous faisons de votre sécurité une priorité.</h3>
+</div>
+<p class="" data-aos="fade-up" data-aos-duration="1000">SIRIIUS est une entreprise ivoirienne spécialisée dans la sécurité électronique. Nous accompagnons les entreprises, institutions et particuliers dans la protection de leurs biens et de leurs espaces, grâce à des solutions technologiques fiables, 
+    modernes.
+    <br><br>
+    Notre expertise couvre l’installation de systèmes de vidéosurveillance, de contrôle d’accès, d’alarmes anti-intrusion. Chaque projet est conçu pour répondre précisément 
+    aux besoins du client, 
+    dans la qualité, la confidentialité et l’efficacité.</p>
+
+        <div class="checklist style4 mb-40 list-two-column" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
             <ul>
-                <li><i class="fa-light fa-square-check"></i> Vidéosurveillance</li>
-                <li><i class="fa-light fa-square-check"></i> Contrôle d'accès sécurisé</li>
-                <li><i class="fa-light fa-square-check"></i> Alarmes et détection d'intrusion</li>
-                <li><i class="fa-light fa-square-check"></i> Gestion centralisée de la sécurité</li>
-                <li><i class="fa-light fa-square-check"></i> Support technique 24/7</li>
-                <li><i class="fa-light fa-square-check"></i> Protection des infrastructures critiques</li>
+                <li data-aos="fade-up" data-aos-delay="100"><i class="fa-light fa-square-check"></i> Vidéosurveillance</li>
+                <li data-aos="fade-up" data-aos-delay="200"><i class="fa-light fa-square-check"></i> Installation controle d'accés</li>
+                <li data-aos="fade-up" data-aos-delay="300"><i class="fa-light fa-square-check"></i> Alarmes anti-intrusion</li>
+                <li data-aos="fade-up" data-aos-delay="400"><i class="fa-light fa-square-check"></i> Caméra de surveillance</li>
+                <li data-aos="fade-up" data-aos-delay="500"><i class="fa-light fa-square-check"></i> Support-détecteur de métaux</li>
+                <li data-aos="fade-up" data-aos-delay="700"><i class="fa-light fa-square-check"></i> Interphone et vidéophone </li>
+                <li data-aos="fade-up" data-aos-delay="800"><i class="fa-light fa-square-check"></i> Serrure intélligente</li>
+                <li data-aos="fade-up" data-aos-delay="900"><i class="fa-light fa-square-check"></i> Portail motorisé coulissant</li>
+                <li data-aos="fade-up" data-aos-delay="1000"><i class="fa-light fa-square-check"></i>Contrôle d'accès </li>
+                <li data-aos="fade-up" data-aos-delay="1100"><i class="fa-light fa-square-check"></i>Pointeur de présence alarme anti instrusion</li>
             </ul>
         </div>
+        
         <section>
-                 <a href="about.html" class="th-btn style8 style-radius">En savoir plus</a></div></div><div class="col-xl-6"><div class="img-box14 mt-50 mt-xl-0"><div class="img1"><img src="assets/img/normal/about_10_1.jpg" alt="About"></div></div></div></div></div></div><section class="service-area4 th-radius5 space" id="service-sec"><div class="container th-container4"><div class="row justify-content-center"><div class="col-lg-6"><div class="title-area text-center me-xl-5 ms-xl-5">
-                    <span class="sub-title sub-title3">Nos services</span><h2 class="sec-title">Nous offrons des services en installation camera et cybersécurité                         </h2></div></div></div>
+                 <a href="about.html" class="th-btn style8 style-radius" style="text-transform: none; ">Nous connaitre davantage</a></div>
+                </div>
+                 <div class="col-xl-6"><div class="img-box14 mt-50 mt-xl-0">
+                    <style>
+                        @media (max-width: 768px) {
+                          .img1 {
+                            width: 90vw !important;
+                            height: 90vw !important;
+                          }
+                        }
+                                        .th-btn {
+                                        text-transform: none; /* Ne transforme pas en majuscule */
+                                    }
+                      </style>
+                      
+                      <div class="img1" style="width: 700px; height: 700px; overflow: hidden; border-radius: 12px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease; margin: auto;">
+                        <img src="assets/img/normal/ze (2).jpeg" alt="About" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                      </div>
+                </div>
+                </div></div></div></div><section class="service-area4 th-radius5 space" id="service-sec"><div class="container th-container4"><div class="row justify-content-center"><div class="col-lg-6"><div class="title-area text-center me-xl-5 ms-xl-5">
+                    <h2 class="sub-title sub-title3" style="font-size: 2em;">Nos services</h2>
+                    <!-- <h2 class="sec-title">Nous offrons des services de qualité  </h2> -->
+                </div></div></div>
                     <div class="row gy-3 justify-content-between align-items-center">
                         <div class="col-md-6 col-xl-3">
                             <div class="service-box2 wow fadeInRight">
                                 <div class="service-box2_shape" data-bg-src="assets/img/shape/ser_shape_1.png"></div>
                                 <div class="service-box2_content">
                                     <div class="service-box2_icon"><img src="assets/img/icon/service_3_2.svg" alt="Icon"></div>
-                                    <h3 class="box-title"><a href="service-details.html">Installation de caméras </a></h3>
-                                    <p class="service-box2_text">Protégez vos infrastructures avec des solutions de surveillance avancées.</p>
-                                    <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                                    <h3 class="box-title">
+                                      <a href="service-details.html">Installation de caméras de surveillance </a>
+                                    </h3>
+                                    <p class="service-box2_text">Nous proposons des solutions adaptées à vos besoins
+                                            .</p>
+                                    <a href="" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -122,9 +415,10 @@
                                 <div class="service-box2_shape" data-bg-src="assets/img/shape/ser_shape_1.png"></div>
                                 <div class="service-box2_content">
                                     <div class="service-box2_icon"><img src="assets/img/icon/service_3_2.svg" alt="Icon"></div>
-                                    <h3 class="box-title"><a href="service-details.html">Protection des données</a></h3>
-                                    <p class="service-box2_text">Assurez la confidentialité et l’intégrité de vos informations sensibles.</p>
-                                    <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                                    <h3 class="box-title"><a href="service-details.html">Installation de clôtures électriques</a></h3>
+                                    <p class="service-box2_text">SIRIIUS vous offre des systèmes de clôtures électriques fiables. 
+                                        </p>
+                                    <a href="" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -133,9 +427,10 @@
                                 <div class="service-box2_shape" data-bg-src="assets/img/shape/ser_shape_1.png"></div>
                                 <div class="service-box2_content">
                                     <div class="service-box2_icon"><img src="assets/img/icon/service_3_3.svg" alt="Icon"></div>
-                                    <h3 class="box-title"><a href="service-details.html">Sécurité des serveurs</a></h3>
-                                    <p class="service-box2_text">Protégez vos serveurs contre les menaces et attaques potentielles.</p>
-                                    <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                                    <h3 class="box-title"><a href="service-details.html">Installation de détecteurs de métaux</a></h3>
+                                    <p class="service-box2_text">SIRIIUS installe des détecteurs fixes pour votre sécurité.
+                                         .</p>
+                                    <a href="" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -144,9 +439,11 @@
                                 <div class="service-box2_shape" data-bg-src="assets/img/shape/ser_shape_1.png"></div>
                                 <div class="service-box2_content">
                                     <div class="service-box2_icon"><img src="assets/img/icon/service_3_4.svg" alt="Icon"></div>
-                                    <h3 class="box-title"><a href="service-details.html">Sécurité des réseaux</a></h3>
-                                    <p class="service-box2_text">Déployez des solutions robustes pour sécuriser vos connexions réseau.</p>
-                                    <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                                    <h3 class="box-title"><a href="service-details.html">Installation d’interphones et de vidéophones</a></h3>
+                                    <p class="service-box2_text">SIRIIUS installe des systèmes 
+                                         pour renforcer votre sécurité.
+                                        .</p>
+                                    <a href="" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -155,9 +452,10 @@
                                 <div class="service-box2_shape" data-bg-src="assets/img/shape/ser_shape_1.png"></div>
                                 <div class="service-box2_content">
                                     <div class="service-box2_icon"><img src="assets/img/icon/service_3_5.svg" alt="Icon"></div>
-                                    <h3 class="box-title"><a href="service-details.html">Chiffrement des données</a></h3>
-                                    <p class="service-box2_text">Protégez vos communications et données avec un chiffrement avancé.</p>
-                                    <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                                    <h3 class="box-title"><a href="service-details.html">Installation de portails motorisés coulissants</a></h3>
+                                    <p class="service-box2_text">Proposons l’installation de portails pour élargir votre confort. 
+                                         .</p>
+                                    <a href="" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -166,9 +464,9 @@
                                 <div class="service-box2_shape" data-bg-src="assets/img/shape/ser_shape_1.png"></div>
                                 <div class="service-box2_content">
                                     <div class="service-box2_icon"><img src="assets/img/icon/service_3_6.svg" alt="Icon"></div>
-                                    <h3 class="box-title"><a href="service-details.html">Protection contre le piratage</a></h3>
-                                    <p class="service-box2_text">Mettez en place des barrières pour contrer les cyberattaques.</p>
-                                    <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                                    <h3 class="box-title"><a href="service-details.html">Installation de contrôle d’accès</a></h3>
+                                    <p class="service-box2_text">SIRIIUS installe des systèmes de contrôle d’accès pour renforcer votre sécurité.</p>
+                                    <a href="" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -177,9 +475,10 @@
                                 <div class="service-box2_shape" data-bg-src="assets/img/shape/ser_shape_1.png"></div>
                                 <div class="service-box2_content">
                                     <div class="service-box2_icon"><img src="assets/img/icon/service_3_8.svg" alt="Icon"></div>
-                                    <h3 class="box-title"><a href="service-details.html">Sauvegarde et récupération</a></h3>
-                                    <p class="service-box2_text">Protégez vos données en cas d’incident grâce à des solutions de sauvegarde.</p>
-                                    <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                                    <h3 class="box-title"><a href="service-details.html">Installation de pointeurs de présence</a></h3>
+                                    <p class="service-box2_text">SIRIIUS installe des pointeurs de présence pour enregistrer les heures d'arrivée et de départ de vos collaborateurs.</p>
+                                  </p>
+                                    <a href="" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -188,53 +487,69 @@
                                 <div class="service-box2_shape" data-bg-src="assets/img/shape/ser_shape_1.png"></div>
                                 <div class="service-box2_content">
                                     <div class="service-box2_icon"><img src="assets/img/icon/service_3_8.svg" alt="Icon"></div>
-                                    <h3 class="box-title"><a href="service-details.html">Sécurité Cloud</a></h3>
-                                    <p class="service-box2_text">Garantissez la protection et la confidentialité de vos données stockées en ligne.</p>
-                                    <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                                    <h3 class="box-title"><a href="service-details.html">Installation d’alarme anti-intrusion</a></h3>
+                                    <p class="service-box2_text">SIRIIUS installe des systèmes d’alarme anti-intrusion pour protéger vos infrastructures.</p>
+                                    <a href="" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                                    <!-- service-details.html -->
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    
+
         </section>
         
-        <div class="choose-area m-2 mt-0 th-radius2 overflow-hidden space"><div class="container"><div class="row align-items-center"><div class="col-xl-6"><div class="title-area mb-20"><span class="sub-title sub-title3 style1">Pourquoi nous choisir</span>
-            <h2 class="sec-title">La Solution Parfaite pour l'Installation de Caméras </h2>        </div>
-            <p class="mb-30 pe-xl-4 me-xl-1">
-                Avec l'évolution constante de la technologie, l'installation de caméras de surveillance devient de plus en plus avancée, intégrant l'intelligence artificielle, la reconnaissance faciale et l'accès à distance via le cloud pour une sécurité renforcée et une surveillance en temps réel.
-            </p>            
+        <div class="choose-area m-2 mt-0 th-radius2 overflow-hidden space"><div class="container"><div class="row align-items-center"><div class="col-xl-6">
+            <div class="title-area mb-20"><span class="sub-title sub-title3"  style="font-size: 1.5rem;"   data-aos="zoom-in"
+                data-aos-duration="800">Pourquoi nous choisir?</span>
+            <h2 class="sec-title"  data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="800">Chez SIRIIUS</h2>        </div>
+            <p class="mb-30 pe-xl-4 me-xl-1"   data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="800">
+                  Nous sommes spécialisés dans la sécurité électronique, et nous mettons tout en œuvre pour garantir la protection optimale de vos biens et de vos locaux. Voici pourquoi nous sommes le partenaire idéal            </p>            
             <div class="checklist style4 choose-checklist list-two-column">
-                <ul><li><i class="fa-light fa-square-check">
+                <ul>
+                    <li data-aos="fade-up" data-aos-delay="100"><i class="fa-light fa-square-check"></i> Vidéosurveillance</li>
+                    <li data-aos="fade-up" data-aos-delay="200"><i class="fa-light fa-square-check"></i> Installation contrôle d'accès</li>
+                    <li data-aos="fade-up" data-aos-delay="300"><i class="fa-light fa-square-check"></i> Alarmes et détection d'intrusion</li>
+                    <li data-aos="fade-up" data-aos-delay="400"><i class="fa-light fa-square-check"></i> Caméra de surveillance</li>
+                    <li data-aos="fade-up" data-aos-delay="500"><i class="fa-light fa-square-check"></i> Support-détecteur de métaux</li>
+                    <li data-aos="fade-up" data-aos-delay="600"><i class="fa-light fa-square-check"></i> Vente de caméra de surveillance</li>
+                    <li data-aos="fade-up" data-aos-delay="700"><i class="fa-light fa-square-check"></i> Interphone/ Vidéophone</li>
+                    <li data-aos="fade-up" data-aos-delay="800"><i class="fa-light fa-square-check"></i> Serrure intelligente</li>
+                    <li data-aos="fade-up" data-aos-delay="900"><i class="fa-light fa-square-check"></i> Portail motorisé coulissant</li>
+                    <li data-aos="fade-up" data-aos-delay="1000"><i class="fa-light fa-square-check"></i> Pointeur de présence</li>
+                    <li data-aos="fade-up" data-aos-delay="1100"><i class="fa-light fa-square-check"></i> Alarme anti-intrusion</li>
+                  </ul>
+                  
+                </div></div>
+                    
+                    <div class="col-xl-6"><div class="choose-image global-image"><div class="img1 th-anim">
+                      <img src="assets/img/normal/zi.jpeg" alt="Choose" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); object-fit: cover;">
 
-                </i>Installation de caméras de surveillance</li><li><i class="fa-light fa-square-check">
-
-                </i>Vos lieux sont sécurisés</li>
-                
-                <li>
-                    <i class="fa-light fa-square-check"></i>Sécurisation de vos informations</li>
-                    <li><i class="fa-light fa-square-check"></i>Identification des menaces</li>
-                    <li><i class="fa-light fa-square-check"></i>Surveillance vidéo</li></ul></div></div>
-                    <div class="col-xl-6"><div class="choose-image global-image"><div class="img1 th-anim"><img src="assets/img/normal/choose_1.png" alt="Choose"></div></div></div></div></div></div>
+                    </div></div></div></div></div></div>
                     <div class=""><div class="container th-container4"><div class="counter-area-7"><div class="row justify-content-md-between justify-content-center"><div class="col-xl-3 col-md-6">
-                        <div class="counter-card7"><div class="divider"></div><h3 class="box-number"><span class="counter-number">49</span></h3><div class="media-body"><p class="counter-text mb-n2">Installations<span> camera</span></p></div></div></div>
-                        <div class="col-xl-3 col-md-6"><div class="counter-card7"><div class="divider"></div><h3 class="box-number"><span class="counter-number">1,2</span></h3><div class="media-body"><p class="counter-text mb-n2">Employé<span> </span></p></div></div></div>
-                        <div class="col-xl-3 col-md-6"><div class="counter-card7"><div class="divider"></div><h3 class="box-number"><span class="counter-number">28</span></h3><div class="media-body"><p class="counter-text mb-n2">Placcement dans quartiers</p></div></div></div>
-                        <div class="col-xl-3 col-md-6"><div class="counter-card7"><div class="divider"></div><h3 class="box-number"><span class="counter-number">2</span></h3><div class="media-body"><p class="counter-text mb-n2">Gestion dans les entreprise</p></div></div></div></div></div></div></div>
+                        <div class="counter-card7"><div class="divider"></div><h3 class="box-number"><span>+<span class="counter-number">200</span></span>
+                        </h3><div class="media-body"><p class="counter-text mb-n2">Installations<span></span></p></div></div></div>
+                        <div class="col-xl-3 col-md-6"><div class="counter-card7"><div class="divider"></div><h3 class="box-number"><span class="counter-number">12</span></h3><div class="media-body"><p class="counter-text mb-n2">Collaborateurs<span> </span></p></div></div></div>
+                        <div class="col-xl-3 col-md-6"><div class="counter-card7"><div class="divider"></div><h3 class="box-number"><span class="counter-number">2</span></h3><div class="media-body"><p class="counter-text mb-n2">Partenaires</p></div></div></div>
+                        <div class="col-xl-3 col-md-6"><div class="counter-card7"><div class="divider"></div><h3 class="box-number"><span class="counter-number">99.99</span></h3><div class="media-body"><p class="counter-text mb-n2">Taux de satisfactions</p></div></div></div></div></div></div></div>
 
       
-        <section class="space-top"><div class="container th-container4"><div class="title-area text-center"><span class="sub-title">Avis des clients</span>
-            <h2 class="sec-title">Apprécié par nos clients  pour l'installation de caméras</h2></div><div class="slider-area testi-grid2-area style2">
+        <section class="space-top"><div class="container th-container4"><div class="title-area text-center"><span class="sub-title typewriter-text" style="font-size: 2em;">Ce que nos clients pensent de nous</span>
+
+            
+        </div><div class="slider-area testi-grid2-area style2">
             
  <div class="testi-indicator"><div class="swiper th-slider testi-grid2-thumb" data-slider-options='{"effect":"slide","slidesPerView":"5","spaceBetween":13,"loop":true,"breakpoints":{"0":{"slidesPerView":4},"576":{"slidesPerView":"5"}}}' data-slider-tab="#testiSlide1">
-    <div class="swiper-wrapper"><div class="swiper-slide"><div class="box-img">
-    <img src="assets/img/testimonial/testi_1_1.png" alt="Image"></div>
+    <div class="swiper-wrapper"><div class="swiper-slide">
 </div>
-<div class="swiper-slide"><div class="box-img"><img src="assets/img/testimonial/testi_1_2.png" alt="Image"></div></div>
-<div class="swiper-slide"><div class="box-img"><img src="assets/img/testimonial/testi_1_3.png" alt="Image"></div></div>
-<div class="swiper-slide"><div class="box-img"><img src="assets/img/testimonial/testi_1_4.png" alt="Image"></div></div>
-<div class="swiper-slide"><div class="box-img">
-    <img src="assets/img/testimonial/testi_1_5.png" alt="Image"></div>
+<div class="swiper-slide"></div>
+<div class="swiper-slide"></div>
+<div class="swiper-slide"></div>
+<div class="swiper-slide">
+ 
 </div></div></div></div>
 
     
@@ -242,94 +557,470 @@
         
         <div class="swiper-wrapper"><div class="swiper-slide">
             <div class="testi-card2">
-                <p class="testi-card2_text">J'ai eu le plaisir de travailler avec Webteck pendant l'année écoulée, et je peux dire avec confiance qu'ils ont été déterminants dans le succès de nos initiatives en cybersécurité et dans l'installation de caméras. En tant que startup, nous avions besoin d'un partenaire technologique capable non seulement de répondre à nos besoins immédiats, mais aussi de grandir avec nous à mesure que nous développions notre entreprise. Webteck a surpassé nos attentes sur tous les fronts.</p>
+                <p class="testi-card2_text">
+                    Témoignage de ABS LOGISTIQUE
+                    "Nous sommes pleinement satisfaits des services de SIRIIUS. Leur équipe a su comprendre nos besoins et nous proposer une solution de vidéosurveillance parfaitement adaptée à notre entrepôt. L’installation a été rapide, professionnelle et discrète. Aujourd’hui, nous avons une vision claire et continue de nos espaces, ce qui renforce la sécurité de nos opérations au quotidien. Merci à SIRIIUS pour leur professionnalisme et leur réactivité."
+                    — Direction Générale, ABS LOGISTIQUE</p>
                 <div class="testi-card2_profile">
-                <div class="testi-card2_content"><h3 class="box-title">Michel Jane Alum</h3><span class="testi-card2_desig">CTO of Portfolio</span></div></div></div></div><div class="swiper-slide">
+                <div class="testi-card2_content"><h3 class="box-title"></h3><span class="testi-card2_desig"></span></div></div></div></div><div class="swiper-slide">
                     <div class="testi-card2">
-                        <p class="testi-card2_text">Si vous avez des questions spécifiques concernant la collecte ou l'analyse des retours clients, ou si vous recherchez des informations générales sur l'importance des retours clients, n'hésitez pas à demander. De plus, si vous avez un échantillon de retour client avec lequel vous souhaitez de l'aide, vous pouvez le partager, et je pourrai fournir des informations ou des suggestions basées sur ce que vous fournissez.</p>
+                        <p class="testi-card2_text">
+                            Témoignage de ONE1TECH
+                            "Nous avons fait appel à SIRIIUS pour l’installation de caméras de surveillance dans nos locaux, et le résultat est au-delà de nos attentes. Le service a été rapide, professionnel et parfaitement exécuté. Les équipements installés sont de qualité et nous offrent une visibilité en temps réel, sur site comme à distance. Merci à toute l’équipe pour leur sérieux et leur efficacité."
+                            — ONE1TECH                        </p>
             
-                        <div class="testi-card2_profile"><div class="testi-card2_content"><h3 class="box-title">Alex Michel</h3><span class="testi-card2_desig">Founder CEO</span></div></div></div></div><div class="swiper-slide"><div class="testi-card2">
+                        <div class="testi-card2_profile"><div class="testi-card2_content"><h3 class="box-title"></h3><span class="testi-card2_desig"></span></div></div></div></div><div class="swiper-slide"><div class="testi-card2">
                             
-                            <p class="testi-card2_text">Cela semble être un retour positif ou une déclaration sur un produit ou service apprécié par les clients du monde entier. Si c'est une déclaration que vous souhaitez partager ou discuter, il est important de mettre en avant les retours positifs ! La satisfaction des clients et les témoignages positifs peuvent être des atouts puissants pour un produit ou un service. Je suis là pour vous aider !</p>
+                            <p class="testi-card2_text">
+                                Témoignage de KAYS INTERNATIONAL
+                                "Grâce à SIRIIUS, nous avons désormais un système de gestion du personnel plus fluide et précis. Leur équipe a installé un pointeur de présence moderne, facile à utiliser et parfaitement adapté à nos besoins. Le service a été rapide, professionnel et sans perturbation de nos activités. Nous recommandons vivement SIRIIUS pour leur sérieux et leur expertise."
+                                — KAYS INTERNATIONAL
+                                </p>
      
                                  <div class="testi-card2_profile"><div class="testi-card2_content">
-                                    <h3 class="box-title">Jenny Wilson</h3><span class="testi-card2_desig">Project Manager</span></div></div></div></div><div class="swiper-slide"><div class="testi-card2">
-                                        <p class="testi-card2_text">C'est fantastique d'entendre que votre produit ou service est apprécié par les clients du monde entier ! Les retours positifs des clients sont un excellent indicateur de satisfaction et peuvent contribuer de manière significative au succès et à la réputation de l'entreprise. Si vous cherchez à capitaliser sur ce sentiment positif, voici quelques idées sur la façon de le faire, tout en développant votre entreprise dans les domaines de la cybersécurité et de l'installation de caméras.</p>
+                                    <h3 class="box-title"></h3><span class="testi-card2_desig"></span></div></div></div></div><div class="swiper-slide"><div class="testi-card2">
+                                        <p class="testi-card2_text">
+                                            Témoignage de AFRIK PANORAMA
+                                                                            "L’installation de la clôture électrique réalisée par SIRIIUS a grandement renforcé la sécurité de notre site. Leur équipe a fait preuve de professionnalisme, de ponctualité et d’une grande maîtrise technique. Le système est fiable, discret et parfaitement opérationnel. Nous sommes très satisfaits du résultat et recommandons SIRIIUS sans hésitation."
+                                                                            — AFRIK PANORAMA
+                                            </p>
 
-                                          <div class="testi-card2_profile"><div class="testi-card2_content"><h3 class="box-title">Savannah Nguyen</h3><span class="testi-card2_desig">UI/UX Designer</span>
-                                        </div></div></div></div><div class="swiper-slide"><div class="testi-card2">
-                                           
+                                          <div class="testi-card2_profile"><div class="testi-card2_content">
+                                            <!-- <h3 class="box-title">Savannah Nguyen</h3><span class="testi-card2_desig">UI/UX Designer</span> -->
+                                        </div></div></div></div>
+                                        <div class="swiper-slide"><div class="testi-card2">
+                                           <p class="testi-card2_text">Témoignage de Natural Perfect
+                                            "Nous remercions SIRIIUS pour l’installation réussie de notre système de caméras de surveillance. Leur équipe a été professionnelle, réactive et attentive à nos besoins. La qualité des images est excellente, et nous avons désormais une sécurité renforcée dans notre espace. Nous sommes très satisfaits du service et recommandons vivement SIRIIUS."
+                                            — Natural Perfect</p>
                                              <div class="testi-card2_profile">
-                                                <div class="testi-card2_content"></div></div></div></div></div>
-                                                <button data-slider-prev="#testiSlide7" class="slider-arrow slider-prev"><i class="far fa-arrow-left"></i></button>
-                                                 <button data-slider-next="#testiSlide7" class="slider-arrow slider-next"><i class="far fa-arrow-right"></i></button></div><div class="testi-line">
+                                                <div class="testi-card2_content"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testi-card2">
+                                            <p class="testi-card2_text">
+                                                Témoignage de Madame BOA  
+                                                "Je suis très satisfaite de l’installation de mon interphone réalisée par SIRIIUS. L’équipe a été ponctuelle, professionnelle et très respectueuse. L’appareil fonctionne parfaitement et me permet désormais de mieux sécuriser l’accès à mon domicile. Merci à SIRIIUS pour ce service de qualité."  
+                                                — Madame BOA
+                                            </p>
+                                            <div class="testi-card2_profile">
+                                                <div class="testi-card2_content"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="swiper-slide">
+                                        <div class="testi-card2">
+                                            <p class="testi-card2_text">
+                                                Témoignage de TotalEnergies  
+                                                "Nous avons sollicité SIRIIUS pour l’installation d’un système de contrôle d’accès dans nos locaux, et nous sommes entièrement satisfaits du résultat. L’équipe a su proposer une solution fiable et moderne, parfaitement adaptée à nos exigences en matière de sécurité. L’installation a été rapide, sans perturber nos activités. Un service professionnel du début à la fin."  
+                                                — Direction Sécurité, TotalEnergies
+                                            </p>
+                                            <div class="testi-card2_profile">
+                                                <div class="testi-card2_content"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="swiper-slide">
+                                        <div class="testi-card2">
+                                            <p class="testi-card2_text">
+                                                Témoignage de Monsieur ABDEL COULIBALY  
+                                                "Je suis très satisfait de l’installation de mon portail motorisé par SIRIIUS. Le travail a été fait avec soin, dans les délais, et le résultat est à la hauteur de mes attentes. Le portail est à la fois pratique, sécurisé et esthétique. Merci à l’équipe pour leur professionnalisme et leur disponibilité."  
+                                                — Monsieur ABDEL COULIBALY
+                                            </p>
+                                            <div class="testi-card2_profile">
+                                                <div class="testi-card2_content"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="swiper-slide">
+                                        <div class="testi-card2">
+                                            <p class="testi-card2_text">
+                                                Témoignage de Madame BATIONO RITA  
+                                                "L’installation de mon vidéophone par SIRIIUS s’est déroulée parfaitement. L’équipe a été professionnelle, rapide et très respectueuse. Le système fonctionne très bien et me permet de contrôler les accès à mon domicile en toute sécurité. Je recommande vivement SIRIIUS pour leur sérieux et la qualité de leur service."  
+                                                — Madame BATIONO RITA
+                                            </p>
+                                            <div class="testi-card2_profile">
+                                                <div class="testi-card2_content"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="swiper-slide">
+                                        <div class="testi-card2">
+                                            <p class="testi-card2_text">
+                                                Témoignage de S3ABTP  
+                                                "Nous avons fait confiance à SIRIIUS pour l’installation d’une serrure intelligente dans nos bureaux, et nous en sommes très satisfaits. Le système est moderne, sécurisé et simple d’utilisation. L’équipe a été professionnelle, à l’écoute et très efficace. Cette installation renforce le contrôle d’accès à nos locaux et améliore notre quotidien. Merci à SIRIIUS pour leur excellent travail."  
+                                                — Direction Générale, S3ABTP
+                                            </p>
+                                            <div class="testi-card2_profile">
+                                                <div class="testi-card2_content"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                               
+                                                 
+                                                </div><div class="testi-line">
                                                     
-                                                 </div></div></div></section>
+                                                 </div></div></div>
+                            </section>
                         
                                                  
                         <section class="space-top" id="project-sec"><div class="container th-container4"><div class="row justify-content-center"><div class="col-lg-6"><div class="title-area text-center">
-                            <span class="sub-title sub-title2">Nos Solutions</span><h2 class="sec-title">Secur<span class="text-theme">isé</span> Vos espaces et vos Données</h2></div></div></div><div class="slider-area"><div class="swiper th-slider has-shadow" id="projectSlider6" data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"}}}'>
-            <div class="swiper-wrapper"><div class="swiper-slide"><div class="project-box style2"><div class="project-img"><img src="assets/img/project/project_6_1.jpg" alt="project image"></div></div></div>
-            <div class="swiper-slide"><div class="project-box style2"><div class="project-img"><img src="assets/img/project/project_6_2.jpg" alt="project image"></div></div></div><div class="swiper-slide"><div class="project-box style2"><div class="project-img"><img src="assets/img/project/project_6_3.jpg" alt="project image"></div></div></div><div class="swiper-slide">
-                <div class="project-box style2"><div class="project-img"><img src="assets/img/project/project_6_1.jpg" alt="project image"></div></div></div><div class="swiper-slide"><div class="project-box style2"><div class="project-img"><img src="assets/img/project/project_6_2.jpg" alt="project image"></div></div>
-            </div><div class="swiper-slide"><div class="project-box style2"><div class="project-img"><img src="assets/img/project/project_6_3.jpg" alt="project image"></div></div></div></div></div><button data-slider-prev="#projectSlider6" class="slider-arrow slider-prev"><i class="far fa-arrow-left"></i></button> 
-            <button data-slider-next="#projectSlider6" class="slider-arrow slider-next"><i class="far fa-arrow-right"></i></button></div></div><div class="sec-shape mt-5 pt-3"><a href="" class="th-btn btn-gradient style-radius">Nos projets  recents</a></div></section><section class="overflow-hidden space" id="blog-sec"><div class="container th-container4">
-               
-                <div class="row justify-content-lg-between justify-content-center align-items-center"><div class="col-lg-6 col-sm-9 pe-xl-5"><div class="title-area text-center text-lg-start"><span class="sub-title sub-title4 style1">recent blog post</span>
-                    <h2 class="sec-title">Découvrez nos dernières réflexions sur la cybersécurité et l'installation de caméras</h2></div></div>
-                    <div class="col-auto"><div class="sec-btn"><a href="blog.html" class="th-btn style-radius">Voir tous les articles</a></div></div></div>
-                    <div class="slider-area"><div class="swiper th-slider has-shadow" id="blogSlider4" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"}}}'>
-                        <div class="swiper-wrapper"><div class="swiper-slide"><div class="blog-box2"><div class="blog-img"><img src="assets/img/blog/blog_3_1.jpg" alt="blog image"></div><div class="blog-box2_content">
-                            <p class="blog-tag">Cybersécurité</p><div class="blog-meta"><a href="blog.html"><i class="far fa-calendar"></i>10, 2024</a> <a href="blog.html"><i class="far fa-user"></i>By admin</a></div><h3 class="box-title">
-                                <a href="blog-details.html">Plongée complète dans les solutions de cybersécurité pour protéger vos installations de caméras</a></h3><a href="blog-details.html" class="line-btn">Lire les détails<i class="fa-solid fa-angles-right"></i></a></div>
-                            </div></div><div class="swiper-slide"><div class="blog-box2"><div class="blog-img"><img src="assets/img/blog/blog_3_2.jpg" alt="blog image"></div><div class="blog-box2_content">
-                                <p class="blog-tag">Installation de caméras</p><div class="blog-meta"><a href="blog.html"><i class="far fa-calendar"></i>15, 2024</a> 
-                                    <a href="blog.html"><i class="far fa-user"></i>By admin</a></div><h3 class="box-title"><a href="blog-details.html">Comment choisir les meilleures caméras pour la sécurité de votre entreprise</a></h3>
-                                    <a href="blog-details.html" class="line-btn">Lire les détails<i class="fa-solid fa-angles-right"></i></a></div></div></div>
-                                    <div class="swiper-slide"><div class="blog-box2"><div class="blog-img"><img src="assets/img/blog/blog_3_3.jpg" alt="blog image"></div><div class="blog-box2_content"><p class="blog-tag">Cybersécurité</p>
-                                        <div class="blog-meta"><a href="blog.html"><i class="far fa-calendar"></i>16, 2024</a> <a href="blog.html"><i class="far fa-user"></i>By admin</a></div>
-                                        <h3 class="box-title"><a href="blog-details.html">Solutions avancées pour sécuriser vos caméras et données</a></h3>
-                                        <a href="blog-details.html" class="line-btn">Lire les détails<i class="fa-solid fa-angles-right"></i></a></div></div>
-                                    </div><div class="swiper-slide"><div class="blog-box2"><div class="blog-img"><img src="assets/img/blog/blog_3_1.jpg" alt="blog image"></div>
-                                    <div class="blog-box2_content"><p class="blog-tag">Installation de caméras</p>
-                                        <div class="blog-meta"><a href="blog.html"><i class="far fa-calendar"></i>17, 2024</a>
-                                             <a href="blog.html">
-                                            <i class="far fa-user"></i>By admin</a></div><h3 class="box-title"><a href="blog-details.html">Les étapes essentielles pour installer un système de caméra de surveillance efficace</a></h3>
-                                            <a href="blog-details.html" class="line-btn">Lire les détails<i class="fa-solid fa-angles-right"></i></a></div></div></div>
-                                            <div class="swiper-slide"><div class="blog-box2"><div class="blog-img"><img src="assets/img/blog/blog_3_2.jpg" alt="blog image"></div><div class="blog-box2_content"><p class="blog-tag">Cybersécurité</p>
-                                                <div class="blog-meta"><a href="blog.html"><i class="far fa-calendar"></i>19, 2024</a> <a href="blog.html">
-                                                    <i class="far fa-user"></i>By admin</a></div><h3 class="box-title"><a href="blog-details.html">Les meilleures pratiques de cybersécurité pour protéger vos installations de caméras</a></h3>
-                                                    <a href="blog-details.html" class="line-btn">Lire les détails<i class="fa-solid fa-angles-right"></i></a></div></div>
-                                                </div><div class="swiper-slide"><div class="blog-box2"><div class="blog-img"><img src="assets/img/blog/blog_3_3.jpg" alt="blog image"></div>
-                                                <div class="blog-box2_content"><p class="blog-tag">Cybersécurité</p><div class="blog-meta">
-                                                    <a href="blog.html"><i class="far fa-calendar"></i>20, 2024</a> <a href="blog.html"><i class="far fa-user"></i>By admin</a></div><h3 class="box-title">
-                                                        <a href="blog-details.html">Renforcer la cybersécurité des caméras de surveillance pour une protection maximale</a></h3><a href="blog-details.html" class="line-btn">Lire les détails<i class="fa-solid fa-angles-right"></i></a></div></div></div></div></div><button data-slider-prev="#blogSlider4" class="slider-arrow slider-prev"><i class="far fa-arrow-left"></i></button> <button data-slider-next="#blogSlider4" class="slider-arrow slider-next"><i class="far fa-arrow-right"></i></button></div></div></section>
+                            <span class="sub-title sub-title2" style="font-size: 2em;">Nos projets recents</span>
+                            <h2 class="sec-title"></h2></div></div></div><div class="slider-area"><div class="swiper th-slider has-shadow" id="projectSlider6" data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"}}}'>
+            <div class="swiper-wrapper"><div class="swiper-slide"><div class="project-box style2">
+                <!-- <div class="project-img"><img src="assets/img/project/voir.jpeg" alt="project image"></div> -->
+                <div class="project-img video-container" data-aos="fade-up" data-aos-duration="1000">
+                    <video autoplay muted loop playsinline data-aos="fade-in" data-aos-delay="200">
+                      <source src="assets/img/project/zzi.mp4" type="video/mp4">
+                      Votre navigateur ne supporte pas la lecture de vidéos.
+                    </video>
+                  
+                    <!-- Icône Play juste visuelle -->
+                    <div class="play-icon" data-aos="zoom-in" data-aos-delay="400">
+                      <i class="fa-solid fa-play"></i>
+                    </div>
+                  </div>
+                  
+            </div></div>
+            <div class="swiper-slide"><div class="project-box style2">
+                <div class="project-img video-container" data-aos="fade-up" data-aos-duration="1000">
+                    <video autoplay muted loop playsinline data-aos="fade-in" data-aos-delay="200">
+                      <source src="assets/img/project/zo.mp4" type="video/mp4">
+                      Votre navigateur ne supporte pas la lecture de vidéos.
+                    </video>
+                  
+                    <!-- Icône Play juste visuelle -->
+                    <div class="play-icon" data-aos="zoom-in" data-aos-delay="400">
+                      <i class="fa-solid fa-play"></i>
+                    </div>
+                  </div>
+        </div></div><div class="swiper-slide"><div class="project-box style2">
+            <div class="project-img video-container" data-aos="fade-up" data-aos-duration="1000">
+                <video autoplay muted loop playsinline data-aos="fade-in" data-aos-delay="200">
+                  <source src="assets/img/project/zu.mp4" type="video/mp4">
+                  Votre navigateur ne supporte pas la lecture de vidéos.
+                </video>
+              
+                <!-- Icône Play juste visuelle -->
+                <div class="play-icon" data-aos="zoom-in" data-aos-delay="400">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+        </div></div><div class="swiper-slide">
+                <div class="project-box style2">
+                    <div class="project-img video-container" data-aos="fade-up" data-aos-duration="1000">
+                        <video autoplay muted loop playsinline data-aos="fade-in" data-aos-delay="200">
+                          <source src="assets/img/project/za.mp4" type="video/mp4">
+                          Votre navigateur ne supporte pas la lecture de vidéos.
+                        </video>
+                      
+                        <!-- Icône Play juste visuelle -->
+                        <div class="play-icon" data-aos="zoom-in" data-aos-delay="400">
+                          <i class="fa-solid fa-play"></i>
+                        </div>
+                      </div>
+                </div></div>
+                
+                <div class="swiper-slide">
+                  <div class="project-box style2">
+                      <div class="project-img video-container" data-aos="fade-up" data-aos-duration="1000">
+                          <video autoplay muted loop playsinline data-aos="fade-in" data-aos-delay="200">
+                            <source src="assets/img/project/zia.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la lecture de vidéos.
+                          </video>
+                        
+                          <!-- Icône Play juste visuelle -->
+                          <div class="play-icon" data-aos="zoom-in" data-aos-delay="400">
+                            <i class="fa-solid fa-play"></i>
+                          </div>
+                        </div>
+                  </div></div>
+                  
+                 
+
+
+
+                    <div class="swiper-slide">
+                      <div class="project-box style2">
+                          <div class="project-img video-container" data-aos="fade-up" data-aos-duration="1000">
+                              <video autoplay muted loop playsinline data-aos="fade-in" data-aos-delay="200">
+                                <source src="assets/img/project/zuu.mp4" type="video/mp4">
+                                Votre navigateur ne supporte pas la lecture de vidéos.
+                              </video>
+                            
+                              <!-- Icône Play juste visuelle -->
+                              <div class="play-icon" data-aos="zoom-in" data-aos-delay="400">
+                                <i class="fa-solid fa-play"></i>
+                              </div>
+                            </div>
+                      </div></div>
+                    
+                    <div class="swiper-slide"><div class="project-box style2">
+                    <div class="project-img video-container" data-aos="fade-up" data-aos-duration="1000">
+                        <video autoplay muted loop playsinline data-aos="fade-in" data-aos-delay="200">
+                          <source src="assets/img/project/zu.mp4" type="video/mp4">
+                          Votre navigateur ne supporte pas la lecture de vidéos.
+                        </video>
+                      
+                        <!-- Icône Play juste visuelle -->
+                        <div class="play-icon" data-aos="zoom-in" data-aos-delay="400">
+                          <i class="fa-solid fa-play"></i>
+                        </div>
+                      </div>
+                </div>
+            </div><div class="swiper-slide"><div class="project-box style2">
+                <div class="project-img video-container" data-aos="fade-up" data-aos-duration="1000">
+                    <video autoplay muted loop playsinline data-aos="fade-in" data-aos-delay="200">
+                      <source src="assets/img/project/za.mp4" type="video/mp4">
+                      Votre navigateur ne supporte pas la lecture de vidéos.
+                    </video>
+                  
+                    <!-- Icône Play juste visuelle -->
+                    <div class="play-icon" data-aos="zoom-in" data-aos-delay="400">
+                      <i class="fa-solid fa-play"></i>
+                    </div>
+                  </div>
+            </div></div></div></div><button data-slider-prev="#projectSlider6" class="slider-arrow slider-prev"><i class="far fa-arrow-left"></i></button> 
+            <button data-slider-next="#projectSlider6" class="slider-arrow slider-next"><i class="far fa-arrow-right"></i></button></div></div><div class="sec-shape mt-5 pt-3"><a href="" class="th-btn btn-gradient style-radius"></a></div></section>
+            
+           
 
     <div class="bg-smoke space" data-bg-src="assets/img/bg/contact_bg_1.png" id="contact-sec"><div class="container">
         <div class="row"><div class="col-xl-8"><div class="title-area mb-35 text-xl-start text-center"><span class="sub-title"><div class="icon-masking me-2"><span class="mask-icon" data-mask-src="assets/img/theme-img/title_shape_2.svg"></span> <img src="assets/img/theme-img/title_shape_2.svg" alt="shape"></div>Contactez-nous!</span><h2 class="sec-title">Avez-vous des Questions?</h2>
-<p class="sec-text">Installez avec enthousiasme des caméras et renforcez la cybersécurité via le commerce électronique. Améliorez de manière spectaculaire les processus de sécurité plutôt que de simples relations renforcées.</p>    </div>
-        <form action="https://html.themeholy.com/webteck/demo/mail.php" method="POST" class="contact-form ajax-contact"><div class="row"><div class="form-group col-md-6"><input type="text" class="form-control" name="name" id="name" placeholder="Votre nom"> 
-            <i class="fal fa-user"></i></div><div class="form-group col-md-6"><input type="email" class="form-control" name="email" id="email" placeholder="Email Address"> <i class="fal fa-envelope"></i></div>
-            <div class="form-group col-md-6"><select name="subject" id="subject" class="form-select"><option value="" disabled="disabled" selected="selected" hidden>Selectionner</option>
-                <option value="Cybersécurité">Cybersécurité</option><option value="Installation camera">Installation camera</option></select>
-                 <i class="fal fa-chevron-down"></i></div><div class="form-group col-md-6"><input type="tel" class="form-control" name="number" id="number" placeholder="Phone Number"> <i class="fal fa-phone"></i></div><div class="form-group col-12">
-                    <textarea name="message" id="message" cols="30" rows="3" class="form-control" placeholder="Votre message"></textarea> <i class="fal fa-comment"></i></div><div class="form-btn text-xl-start text-center col-12"><button class="th-btn">Envoyer<i class="fa-regular fa-arrow-right ms-2"></i></button></div></div><p class="form-messages mb-0 mt-3"></p></form></div></div></div></div>
+<p class="sec-text">
+    
+    Notre équipe est à votre écoute ! N’hésitez pas à nous contacter pour en savoir plus sur nos services ou obtenir un devis personnalisé.
+</p>    </div>
+        <!-- FORMULAIRE -->
+        <form id="contactForm" action="https://formsubmit.co/contact@siriius-ci.com" method="POST" class="contact-form">
+          <!-- Honeypot anti-bot -->
+          <input type="text" name="_honey" style="display:none">
+          <!-- Désactiver captcha (optionnel) -->
+          <input type="hidden" name="_captcha" value="false">
+          <!-- Ne pas rediriger après envoi -->
+          <input type="hidden" name="_next" value="">
+        
+          <div class="row">
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" name="name" placeholder="Votre nom" required>
+              <i class="fal fa-user"></i>
+            </div>
+            <div class="form-group col-md-6">
+              <input type="email" class="form-control" name="email" placeholder="Email" required>
+              <i class="fal fa-envelope"></i>
+            </div>
+            <div class="form-group col-md-6">
+              <select name="subject" class="form-select" required>
+                <option value="" disabled selected hidden>Sélectionner</option>
+                <option value="Web Development">Sécuritéinformatique</option>
+                <option value="Brand Marketing">Installationcaméra</option>
+                
+              </select>
+              <i class="fal fa-chevron-down"></i>
+            </div>
+            <div class="form-group col-md-6">
+              <input type="tel" class="form-control" name="number" placeholder="Numéro">
+              <i class="fal fa-phone"></i>
+            </div>
+            <div class="form-group col-12">
+              <textarea name="message" cols="30" rows="3" class="form-control" placeholder="Votre message" required></textarea>
+              <i class="fal fa-comment"></i>
+            </div>
+            <div class="form-btn text-xl-start text-center col-12">
+              <button type="submit" class="th-btn">Envoyez <i class="fa-regular fa-arrow-right ms-2"></i></button>
+            </div>
+          </div>
+        
+          <!-- Message de confirmation -->
+          <p id="contactSuccess" class="form-messages mt-3" style="display:none; color:green;">
+            ✅ Merci ! Votre message a bien été envoyé.
+          </p>
+        </form>
+        
+        <!-- SCRIPT JS -->
+        <script>
+        (function() {
+          const contactForm = document.getElementById('contactForm');
+          const contactSuccess = document.getElementById('contactSuccess');
+        
+          if (!contactForm) return;
+        
+          contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+        
+            const formData = new FormData(contactForm);
+        
+            fetch(contactForm.action, {
+              method: "POST",
+              body: formData,
+              headers: {
+                'Accept': 'application/json'
+              }
+            }).then(response => {
+              if (response.ok) {
+                contactForm.reset();
+                contactSuccess.style.display = 'block';
+              } else {
+                alert("❌ Une erreur est survenue. Veuillez réessayer.");
+              }
+            }).catch(error => {
+              alert("❌ Erreur réseau : impossible d’envoyer le message.");
+            });
+          });
+        })();
+        </script>
+
+                  </div></div></div></div>
     
     <footer class="footer-wrapper footer-layout8 footer-layout9 bg-black"><div class="container th-container4">
         <div class="widget-area"><div class="row justify-content-between">
         <div class="col-12 col-xl-5"><div class="widget style2 footer-widget"><h3 class="widget_title style2">Nous contacter</h3>
-            <div class="newsletter-widget"><p class="footer-text">Obtenez tous nos informations en vous inscrivant</p><form class="newsletter-form style2"><i class="fa-sharp fa-light fa-envelope"></i>
-                 <input class="form-control" type="email" placeholder="Email Address" required=""> <button type="submit" class="th-btn style3">Envoyer</button></form></div></div></div>
+            <div class="newsletter-widget"><p class="footer-text">Obtenez toutes nos informations en vous inscrivant</p>
+              
+              <!-- Formulaire -->
+<form id="newsletter-form" action="https://formsubmit.co/contact@siriius-ci.com" method="POST" class="newsletter-form style2">
+  <!-- Honeypot anti-bot -->
+  <input type="text" name="_honey" style="display:none">
+  <!-- Désactiver le captcha Formsubmit si tu préfères -->
+  <input type="hidden" name="_captcha" value="false">
+  <!-- Ne pas rediriger après envoi -->
+  <input type="hidden" name="_next" value="">
+
+  <i class="fa-sharp fa-light fa-envelope"></i>
+  <input class="form-control" type="email" name="email" placeholder="Email" required>
+  <button type="submit" class="th-btn style3">Envoyez</button>
+</form>
+
+<!-- Message de succès -->
+<p id="success-message" style="display:none; color: green; margin-top: 10px;">
+  ✅ Merci ! Votre email a bien été envoyé.
+</p>
+
+<!-- Script JS -->
+<script>
+  const form = document.getElementById('newsletter-form');
+  const successMessage = document.getElementById('success-message');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); // empêche le rechargement
+
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        form.reset(); // vide le champ email
+        successMessage.style.display = 'block'; // affiche le message
+      } else {
+        alert("Une erreur est survenue. Veuillez réessayer.");
+      }
+    }).catch(error => {
+      alert("Erreur réseau : impossible d’envoyer le formulaire.");
+    });
+  });
+</script>
+
+                </div></div></div>
             <div class="col-md-4 col-xl-auto"><div class="widget widget_nav_menu footer-widget"><h3 class="widget_title style2">Entreprise</h3><div class="menu-all-pages-container"><ul class="menu"><li><a href="about.html">A propos</a></li>
-                <li><a href="contact.html">Contacter</a></li><li><a href="blog.html">Blog</a></li><li><a href=""> Nos services</a></li><li><a href="contact.html">Nos partenaires</a></li></ul></div></div></div>
-                <div class="col-md-4 col-xl-auto"><div class="widget widget_nav_menu footer-widget"><h3 class="widget_title style2">Projets</h3><div class="menu-all-pages-container"><ul class="menu"><li><a href="blog.html">Installation</a></li><li><a href="pricing.html">Protection</a></li><li><a href="faq.html"></a></li><li><a href="project.html">Renforcer</a></li><li><a href="contact.html">Collaborer</a></li></ul></div></div></div>
-                <div class="col-md-4 col-xl-auto"><div class="widget widget_offer footer-widget"><h3 class="widget_title style2">En savoir plus</h3><p class="footer-text mb-30">Nous contacter ou suivre sur nos pages</p><div class="download-btn-wrap"><div class="mb-10"><img src="assets/img/normal/google-play.png" alt=""></a></div><div><a target="_blank" href="https://www.apple.com/store" class="download-btn"><img src="assets/img/normal/app.png" alt=""></a></div></div></div></div></div></div></div><div class="copyright-wrap"><div class="container th-container4">
-                    <div class="row gy-3 justify-content-between align-items-center"><div class="col-lg-6"><p class="copyright-text">Siruis <i class="fal fa-copyright"></i> 2025 <a href="">site vitrine</a>. Tous droits réservés.</p></div><div class="col-lg-6 text-lg-end text-center"><div class="th-social style4"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a> 
-                        <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a> <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a> <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></div></div></div></div></div></footer>
+                <li><a href="contact.html">Contacter</a></li><li><a href="blog.html"></a></li>
+                <li><a href="service.html"> Nos services</a></li><li><a href="contact.html">Nos partenaires</a></li></ul></div></div></div>
+                <div class="col-md-4 col-xl-auto"><div class="widget widget_nav_menu footer-widget"><h3 class="widget_title style2">Projets</h3><div class="menu-all-pages-container"><ul class="menu"><li><a href="">Installation</a></li><li><a href="">Protection</a></li><li><a href="faq.html"></a></li><li><a href="">Renforcer</a></li><li><a href="">Collaborer</a></li></ul></div></div></div>
+                <div class="col-md-4 col-xl-auto"><div class="widget widget_offer footer-widget"><h3 class="widget_title style2" style="text-transform: none; ">En savoir plus</h3><p class="footer-text mb-30">Nous contacter ou suivre sur nos pages</p>
+                   <div class="th-social style4">
+                  <a href="https://www.facebook.com/share/1AK2q3Tphg/"><i class="fab fa-facebook-f"></i></a> 
+                    <!-- <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>  -->
+                    <a href="https://www.linkedin.com/company/siriius/"><i class="fab fa-linkedin-in"></i></a>
+                     <!-- <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a> -->
+                    </div>
+                    <div class="download-btn-wrap"><div class="mb-10">
+                
+                </a></div><div>
+                </div></div></div></div></div></div></div><div class="copyright-wrap"><div class="container th-container4">
+                    <div class="row gy-3 justify-content-between align-items-center"><div class="col-lg-6"><p class="copyright-text">Siriius<i class="fal fa-copyright"></i> 2025 <a href="">site vitrine</a>. Tous droits réservés.</p></div><div class="col-lg-6 text-lg-end text-center">
+                      <div class="th-social style4">
+                      <a href="https://www.facebook.com/share/1AK2q3Tphg/"><i class="fab fa-facebook-f"></i></a> 
+                        <!-- <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>  -->
+                        <a href="https://www.linkedin.com/company/siriius/"><i class="fab fa-linkedin-in"></i></a>
+                         <!-- <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a> -->
+                        </div>
+                      </div></div></div></div></footer>
                         
     <div class="scroll-top"><svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102"><path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path></svg>
     </div><script src="assets/js/vendor/jquery-3.7.1.min.js"></script><script src="assets/js/swiper-bundle.min.js">
+        
 
-    </script><script src="assets/js/bootstrap.min.js"></script><script src="assets/js/jquery.magnific-popup.min.js"></script><script src="assets/js/jquery.counterup.min.js"></script><script src="assets/js/circle-progress.js"></script><script src="assets/js/jquery-ui.min.js"></script><script src="assets/js/imagesloaded.pkgd.min.js"></script><script src="assets/js/isotope.pkgd.min.js"></script><script src="assets/js/tilt.jquery.min.js"></script><script src="assets/js/gsap.min.js"></script><script src="assets/js/ScrollTrigger.min.js"></script><script src="assets/js/smooth-scroll.js"></script><script src="assets/js/particles.min.js"></script><script src="assets/js/particles-config.js"></script><script src="assets/js/main.js"></script></body>
+    </script><script src="assets/js/bootstrap.min.js"></script><script src="assets/js/jquery.magnific-popup.min.js"></script><script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/circle-progress.js"></script><script src="assets/js/jquery-ui.min.js"></script><script src="assets/js/imagesloaded.pkgd.min.js"></script><script src="assets/js/isotope.pkgd.min.js"></script><script src="assets/js/tilt.jquery.min.js"></script>
+    <script src="assets/js/gsap.min.js"></script><script src="assets/js/ScrollTrigger.min.js"></script><script src="assets/js/smooth-scroll.js"></script><script src="assets/js/particles.min.js"></script><script src="assets/js/particles-config.js"></script>
+    <script src="assets/js/main.js"></script>
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 600, // durée des animations
+      once: false // ← animation se rejoue à chaque fois qu'on revient dessus
+    });
+  </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const el = document.querySelector('.typewriter-text');
+    
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    el.style.animation = 'none';
+                    el.offsetHeight; // force le repaint
+                    el.style.animation = 'typing 2s steps(25, end), blink .7s step-end infinite';
+                    el.style.width = '100%';
+                    el.style.opacity = 1;
+                }
+            });
+        }, {
+            threshold: 0.7
+        });
+    
+        observer.observe(el);
+    });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const animatedElements = document.querySelectorAll('.animate-on-scroll');
+      
+          const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.style.opacity = 1;
+                entry.target.style.transform = "translateY(0)";
+              } else {
+                // Réinitialise si l'élément quitte l'écran
+                entry.target.style.opacity = 0;
+                entry.target.style.transform = "translateY(30px)";
+              }
+            });
+          }, {
+            threshold: 0.6
+          });
+      
+          animatedElements.forEach(el => observer.observe(el));
+        });
+      </script>
+      
+      
+    
+
+</body>
 <!-- Mirrored from html.themeholy.com/webteck/demo/home-cyber-security-op.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Feb 2025 10:51:56 GMT -->
 </html>
